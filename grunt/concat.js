@@ -1,8 +1,10 @@
 module.exports = function(grunt) {
     grunt.config('concat', {
         vendorcss: {
-            src: [],
-            dest: 'src/public/css/vendor.css'
+            src: [
+                'resources/vendor/bootstrap/dist/css/bootstrap.min.css',
+            ],
+            dest: 'src/public/css/vendor.min.css'
         },
         vendorjs: {
             src: [
