@@ -21,7 +21,25 @@ module.exports = function(grunt) {
                     dest: 'resources/vendor/jquery'
                 }
             ]
-        }
+        },
+        fontawesome: {
+            files: [
+                {
+                    nonull: true,
+                    expand: true,
+                    cwd: 'src/vendor/components/font-awesome',
+                    src: ['fonts/**'],
+                    dest: 'src/public'
+                },
+                {
+                    nonull: true,
+                    expand: true,
+                    cwd: 'src/vendor/components/font-awesome',
+                    src: ['css/**'],
+                    dest: 'resources/vendor/fontawesome'
+                }
+            ]
+        },
     });
     
     grunt.loadNpmTasks('grunt-contrib-copy');
